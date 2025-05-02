@@ -1,197 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAF Consultoria Especializada</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAF CONSULTORIA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        header {
-            background-color: #002244;
-            color: white;
-            padding: 80px 20px;
-            position: relative;
-        }
-
-        .logo {
-            width: 90px;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 32px;
-        }
-
-        p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #25D366;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: 0.3s;
-            margin: 10px;
-        }
-
-        .btn:hover {
-            background-color: #1EBE5D;
-        }
-
-        .servicos, .beneficios-section {
-            padding: 40px 20px;
-        }
-
-        .servicos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .card {
-            background-color: white;
-            padding: 20px;
-            margin: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 320px;
-            text-align: left;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        h2, h3 {
-            color: #002244;
-        }
-
-        footer {
-            background-color: #002244;
-            color: white;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .instagram-link {
-            color: #FFD700;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .instagram-link:hover {
-            text-decoration: underline;
-        }
-
-        .promo-timer {
-            background-color: #FFD700;
-            color: #002244;
-            font-weight: bold;
-            padding: 20px;
-            font-size: 20px;
-        }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
     </style>
-</head>
-<body>
-    <header>
-        <img src="logo.jpeg" alt="Logo da CAF Consultoria Especializada" class="logo">
-        <h1>CAF Consultoria Especializada</h1>
-        <p>O lugar certo para limpar seu nome com segurança.</p>
-        <a href="https://wa.me/558186902846" class="btn" target="_blank" rel="noopener noreferrer">INICIAR ATENDIMENTO</a>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="bg-blue-900 text-white">
+      <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <div class="flex items-center space-x-4">
+          <img src="imagens/logo.jpeg" alt="Logo Redonda CAF" class="h-12 w-12 rounded-full border-2 border-white" />
+        </div>
+        <nav class="space-x-6 hidden md:block">
+          <a href="#sobre" class="hover:underline">Sobre</a>
+          <a href="#solucoes" class="hover:underline">Soluções</a>
+          <a href="#contato" class="hover:underline">Contato</a>
+        </nav>
+      </div>
     </header>
 
-    <div class="promo-timer">
-        Promoção para empresas: 50% de desconto!<br>
-        Termina em: <span id="countdown">carregando...</span>
-    </div>
-
-    <section class="servicos">
-        <div class="card">
-            <h3>LIMPEZA DE NOME</h3>
-            <p>Negociação e regularização de dívidas para retirar seu CPF de restrições como SPC e Serasa.</p>
-        </div>
-        <div class="card">
-            <h3>AUMENTO DE SCORE</h3>
-            <p>Orientações práticas e seguras para aumentar seu score de crédito e conseguir aprovações financeiras.</p>
-        </div>
-        <div class="card">
-            <h3>CONSULTORIA PARA EMPRESAS</h3>
-            <p>Suporte estratégico para empresas: gestão financeira, redução de inadimplência e crédito empresarial.</p>
-        </div>
+    <section class="bg-gradient-to-r from-blue-900 to-blue-600 text-white py-20 text-center">
+      <div class="max-w-2xl mx-auto px-4">
+        <h1 class="text-4xl font-bold mb-4">Limpe seu nome com a CAF CONSULTORIA</h1>
+        <p class="text-lg mb-6">Soluções jurídicas inteligentes para CPF e CNPJ</p>
+        <a
+          href="https://wa.me/558186902846"
+          target="_blank"
+          class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold"
+          >Fale conosco no WhatsApp</a
+        >
+      </div>
     </section>
 
-    <section class="beneficios-section">
-        <h2>Conheça seus benefícios</h2>
-        <ol style="max-width: 600px; margin: auto; text-align: left;">
-            <li>Suporte completo com atendimento personalizado.</li>
-            <li>Negociações com segurança e sigilo.</li>
-            <li>Aumento real das chances de crédito aprovado.</li>
-            <li>Melhor planejamento financeiro para sua vida.</li>
-        </ol>
+    <section class="py-16 bg-white text-center">
+      <h2 class="text-3xl font-bold mb-10">Resultados Reais</h2>
+      <div class="flex flex-wrap justify-center gap-8 px-4">
+        <div class="bg-gray-100 p-6 rounded-xl shadow w-64">
+          <p class="text-2xl font-bold">+5.000</p>
+          <p>Nomes limpos com sucesso</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow w-64">
+          <p class="text-2xl font-bold">98%</p>
+          <p>de satisfação entre clientes</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow w-64">
+          <p class="text-2xl font-bold">1 ano</p>
+          <p>de garantia nos atendimentos</p>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <p>©️ 2024 CAF Consultoria Especializada. Todos os direitos reservados.</p>
-            <p>Nos siga no Instagram:</p>
-            <a href="https://www.instagram.com/caf_consultoria_especializada?igsh=OXJrOXg4ZjkyOHMy" class="instagram-link" target="_blank" rel="noopener noreferrer">@caf_consultoria_especializada</a>
-        </div>
+    <section id="sobre" class="py-16 bg-gray-100 text-center px-4">
+      <h2 class="text-3xl font-bold mb-6">Quem Somos</h2>
+      <p class="max-w-3xl mx-auto">
+        A CAF CONSULTORIA E ANÁLISE FINANCEIRA é especialista em soluções jurídicas inteligentes para CPF e
+        CNPJ. Atuamos com seriedade, agilidade e total discrição para garantir que você volte ao mercado
+        com segurança.
+      </p>
+    </section>
+
+    <section id="contato" class="bg-blue-900 text-white py-16 text-center px-4">
+      <h2 class="text-3xl font-bold mb-4">Fale com a gente</h2>
+      <p class="mb-6">Estamos prontos para ajudar você a recomeçar com o nome limpo!</p>
+      <a
+        href="https://wa.me/558186902846"
+        target="_blank"
+        class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-full font-semibold"
+        >WhatsApp</a
+      >
+    </section>
+
+    <footer class="bg-gray-800 text-gray-100 text-center py-6">
+      <p>&copy; 2025 CAF CONSULTORIA E ANÁLISE FINANCEIRA. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        const countdownElement = document.getElementById("countdown");
-
-        const targetDate = new Date();
-        targetDate.setDate(targetDate.getDate() + 5);
-        targetDate.setHours(targetDate.getHours() + 10);
-        targetDate.setMinutes(targetDate.getMinutes() + 4);
-        targetDate.setSeconds(targetDate.getSeconds() + 36);
-
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-
-            if (distance < 0) {
-                countdownElement.innerHTML = "Promoção encerrada!";
-                return;
-            }
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-        }
-
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-    </script>
-</body>
+  </body>
 </html>
